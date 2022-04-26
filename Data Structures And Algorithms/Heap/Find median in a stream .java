@@ -45,8 +45,7 @@ class Solution
     public static void balanceHeaps()
     {       
       if(right.size()>left.size()){
-           left.add(right.peek());
-           right.poll();
+           left.add(right.remove());
        }
     }
     
